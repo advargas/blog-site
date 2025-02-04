@@ -4,7 +4,9 @@ module.exports = (phase, { defaultConfig }) => {
      */
     const nextConfig = {
       images: {
-        domains: ['images.ctfassets.net'],
+        remotePatterns: [{
+          hostname: 'images.ctfassets.net'
+      }],
       },
     }
     return nextConfig
